@@ -1,29 +1,9 @@
+function primeNumber (num){
+    for (var divisor = 2; divisor < num; divisor++)
+    if (num % divisor == 0) return false;
+    return true;
+}
 
-            var nome = "Joseilda";
-            var sobrenome = "Nascimento";
-            var idade = 39;
-            var anoAtual = 2024;
-            var nomeEsobrenome = nome + sobrenome
-            var anoNascimento = anoAtual - idade
-           
-        console.log (`nome completo: ${nomeEsobrenome}`)
-        console.log (`Ano de nascimento: ${anoNascimento}`)
+var determinadoNumero = 100;
 
-     
-
-
-
-        var idade1 = 40;
-        var idade2 = 15;
-        var resultado = idade1 + idade2
-
-        console.log ('idade1Eidade2=' + resultado)
-
-
-//atribuição
-
-
-
-//inicializar variável
-
-var aula ="aula 2"
+for (var i=2; i < determinadoNumero; i++) if (primeNumber(i)) console.log(i);
